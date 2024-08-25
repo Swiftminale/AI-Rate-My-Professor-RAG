@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Emily Anderson",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Dr. Anderson is knowledgeable but her lectures can be a bit dry at times. Overall, a solid professor."
+      },
+      {
+        "professor": "Dr. Mark Wilson",
+        "subject": "Computer Science",
+        "stars": 5,
+        "review": "Absolutely fantastic professor! Always willing to help and makes difficult concepts easy to understand."
+      },
+      {
+        "professor": "Dr. Sarah Johnson",
+        "subject": "Mathematics",
+        "stars": 3,
+        "review": "Good professor but sometimes hard to follow. Make sure you attend the office hours."
+      },
+      {
+        "professor": "Dr. James Parker",
+        "subject": "History",
+        "stars": 5,
+        "review": "His lectures are engaging and he always ties history back to current events, which makes the material more interesting."
+      },
+      {
+        "professor": "Dr. Michael Turner",
+        "subject": "Chemistry",
+        "stars": 2,
+        "review": "Very hard to follow. The exams are tough and not reflective of the lecture material."
+      },
+      {
+        "professor": "Dr. Olivia Harris",
+        "subject": "English",
+        "stars": 4,
+        "review": "Dr. Harris provides excellent feedback on essays. However, her grading can be strict."
+      },
+      {
+        "professor": "Dr. Brian Miller",
+        "subject": "Philosophy",
+        "stars": 3,
+        "review": "Interesting content but the class discussions can go off-topic at times."
+      },
+      {
+        "professor": "Dr. Sophia Lee",
+        "subject": "Biology",
+        "stars": 5,
+        "review": "One of the best professors I've had. Her passion for the subject is contagious."
+      },
+      {
+        "professor": "Dr. Thomas Scott",
+        "subject": "Psychology",
+        "stars": 4,
+        "review": "Engaging professor with lots of real-world examples. Exams can be tough but fair."
+      },
+      {
+        "professor": "Dr. Laura Martin",
+        "subject": "Sociology",
+        "stars": 3,
+        "review": "Decent professor, but sometimes the lectures feel rushed. Group work can be overwhelming."
+      },
+      {
+        "professor": "Dr. Robert Davis",
+        "subject": "Economics",
+        "stars": 2,
+        "review": "Not very helpful during office hours and the lectures are not well-structured."
+      },
+      {
+        "professor": "Dr. Rebecca White",
+        "subject": "Political Science",
+        "stars": 5,
+        "review": "An amazing professor with insightful lectures and thought-provoking assignments."
+      },
+      {
+        "professor": "Dr. Andrew Walker",
+        "subject": "Statistics",
+        "stars": 4,
+        "review": "Clear and concise lectures. Very helpful during office hours."
+      },
+      {
+        "professor": "Dr. Jennifer Adams",
+        "subject": "Anthropology",
+        "stars": 3,
+        "review": "Interesting lectures but can be difficult to stay engaged at times."
+      },
+      {
+        "professor": "Dr. Charles Evans",
+        "subject": "Philosophy",
+        "stars": 1,
+        "review": "Not very approachable and doesn't seem to care about student success."
+      },
+      {
+        "professor": "Dr. Karen Ramirez",
+        "subject": "Environmental Science",
+        "stars": 5,
+        "review": "Engaging, knowledgeable, and always available for extra help."
+      },
+      {
+        "professor": "Dr. Matthew Perez",
+        "subject": "Business",
+        "stars": 4,
+        "review": "Great professor, but the coursework can be overwhelming at times."
+      },
+      {
+        "professor": "Dr. Jessica Moore",
+        "subject": "Art History",
+        "stars": 5,
+        "review": "Her passion for the subject is evident in every lecture. Highly recommend her class!"
+      },
+      {
+        "professor": "Dr. Steven Clark",
+        "subject": "Music Theory",
+        "stars": 3,
+        "review": "Decent lectures but not very interactive. Exams are fair."
+      },
+      {
+        "professor": "Dr. Megan Brooks",
+        "subject": "Linguistics",
+        "stars": 4,
+        "review": "Fascinating lectures with great real-life applications. However, the grading is a bit tough."
+      }
+    ]
+  }
+  
