@@ -70,7 +70,7 @@ export default function LandingPage() {
         }}
       >
         Find the best professors based on your needs.
-      </Typography>
+      </Typography>j
       {loading ? (
         <RingLoader color="#FCA311" size={60} css={{ marginTop: "16px" }} />
       ) : (
@@ -81,6 +81,14 @@ export default function LandingPage() {
             bgcolor: "#fcbf49",
             color: "black",
             fontSize: isMobile ? "0.875rem" : "1rem",
+            borderRadius: "12px", // Rounded corners
+            padding: isMobile ? "8px 16px" : "12px 24px", // Adjust padding for different screen sizes
+            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)", // Add shadow for depth
+            textTransform: "uppercase", // Uppercase text for emphasis
+            "&:hover": {
+              bgcolor: "#f9a825", // Darker shade on hover
+              boxShadow: "0px 6px 12px rgba(0, 0, 0, 0.4)", // Enhance shadow on hover
+            },
           }}
           onClick={handleClick}
         >

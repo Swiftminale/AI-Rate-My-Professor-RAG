@@ -36,16 +36,16 @@ export async function POST(req) {
   });
 
   let resultString =
-    "\n\nReturned results from vector DB (done automatically):\n";
-  results.matches.forEach((match, index) => {
-    resultString += `\n${index + 1}. **Professor ${
-      match.metadata.professor
-    }**\n`;
-    resultString += `- **Subject:** ${match.metadata.subject}\n`;
-    resultString += `- **Rating:** ⭐${match.metadata.stars}\n`;
-    resultString += `- **Review:** "${match.metadata.review}"\n`;
-    resultString += `\n`; // Added newline between professors
+  "\n\nReturned results from vector db (done automatically):\n";
+  results.matches.forEach((match) => {
+    resultString += `
+        Professor: ${match.id}
+        Review: ${match.metadata.review}
+        Subject: ${match.metadata.subject}
+        Stars: ⭐ ${match.metadata.stars}
+        \n\n`;
   });
+
 
   const lastMessage = data[data.length - 1];
   const lastMessageContent = lastMessage.content + resultString;

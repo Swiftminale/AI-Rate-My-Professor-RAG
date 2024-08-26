@@ -6,8 +6,12 @@ import {
   Button,
   useTheme,
   useMediaQuery,
+  IconButton,
+  Typography
 } from "@mui/material";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -18,6 +22,7 @@ export default function Home() {
     },
   ]);
   const [message, setMessage] = useState("");
+  const router = useRouter();
 
   const sendMessage = async () => {
     setMessages((messages) => [
@@ -61,12 +66,28 @@ export default function Home() {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
+  // Handle back navigation
+  const handleBack = () => {
+    router.push("/"); // Replace '/' with your main page route if different
+  };
+
+  // Handle new chat functionality
+  const handleNewChat = () => {
+    setMessages([
+      {
+        role: "assistant",
+        content:
+          "Hi! I'm the Rate My Professor support assistant. How can I help you today?",
+      },
+    ]);
+    setMessage(""); // Clear message input as well
+  };
+
   return (
     <Box
       width="100vw"
       height="100vh"
       display="flex"
-      flexDirection="column"
       justifyContent="center"
       alignItems="center"
       p={2}
@@ -75,6 +96,31 @@ export default function Home() {
         overflow: "hidden",
       }}
     >
+      {/* Sidebar for New Chat Button */}
+      
+      <Stack
+        direction="column"
+        spacing={2}
+        alignItems="center"
+        sx={{
+          width: isMobile ? "20%" : "15%", // Sidebar width for desktop and mobile
+          height: "100%", // Full height
+          borderRight: "1px solid",
+          borderColor: "#FCA311",
+          padding: 2,
+        }}
+      >
+        <Button
+          variant="outlined"
+          color="primary"
+          onClick={handleNewChat}
+          sx={{ width: "100%" }}
+        >
+          New Chat
+        </Button>
+      </Stack>
+
+      {/* Chat Window */}
       <Stack
         direction="column"
         width={isMobile ? "100%" : "80%"} // Full width on mobile
@@ -84,6 +130,23 @@ export default function Home() {
         borderRadius={2}
         overflow="hidden"
       >
+        {/* Back button */}
+        <Stack
+          direction="row"
+          spacing={1}
+          alignItems="center"
+          padding={1}
+          borderBottom="1px solid"
+          borderColor="divider"
+          sx={{
+            flexShrink: 0,
+          }}
+        >
+          <IconButton onClick={handleBack} color="primary">
+            <ArrowBackIcon />
+          </IconButton>
+        </Stack>
+
         <Stack
           direction="column"
           spacing={2}
