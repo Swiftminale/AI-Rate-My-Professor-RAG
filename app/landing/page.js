@@ -70,7 +70,7 @@ export default function LandingPage() {
         }}
       >
         Find the best professors based on your needs.
-      </Typography>j
+      </Typography>
       {loading ? (
         <RingLoader color="#FCA311" size={60} css={{ marginTop: "16px" }} />
       ) : (
